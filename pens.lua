@@ -7,18 +7,84 @@ if not getloadedmodules then
 	game:GetService("Players").LocalPlayer:Kick("gtfo kid lol get good you dont need this shit bruv , logged to the devs nob")
 end
 if shared.yes then
-	return
+    return
 end
 shared.yes = true
+local ScreenGui1 = Instance.new("ScreenGui", game.CoreGui)
+local Frame1 = Instance.new("Frame", ScreenGui1)
+local TextBox1 = Instance.new("TextBox", Frame1)
+ScreenGui1.DisplayOrder = 0
+ScreenGui1.Enabled = true
+ScreenGui1.IgnoreGuiInset = false
+ScreenGui1.ResetOnSpawn = true
+ScreenGui1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui1.Archivable = true
+ScreenGui1.AutoLocalize = true
+Frame1.Active = false
+Frame1.AnchorPoint = Vector2.new(0, 0)
+Frame1.BackgroundColor3 = Color3.new(23,233,120)
+Frame1.BackgroundTransparency = .1
+Frame1.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Frame1.BorderSizePixel = 1
+Frame1.LayoutOrder = 0
+Frame1.Position = UDim2.new(0.28474041819572, 0, 0.0051107327453792, 0)
+Frame1.Rotation = 0
+Frame1.Selectable = false
+Frame1.Size = UDim2.new(0, 820, 0, 100)
+Frame1.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Frame1.Style = Enum.FrameStyle.Custom
+Frame1.Visible = true
+Frame1.ZIndex = 1
+Frame1.Archivable = true
+Frame1.ClipsDescendants = false
+Frame1.AutoLocalize = true
+TextBox1.Active = true
+TextBox1.AnchorPoint = Vector2.new(0, 0)
+TextBox1.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox1.BackgroundTransparency = 0
+TextBox1.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+TextBox1.BorderSizePixel = 1
+TextBox1.ClearTextOnFocus = false
+TextBox1.CursorPosition = 1
+TextBox1.LayoutOrder = 0
+TextBox1.MultiLine = false
+TextBox1.Position = UDim2.new(0, 0, 0, 0)
+TextBox1.Rotation = 0
+TextBox1.Selectable = true
+TextBox1.ShowNativeInput = true
+TextBox1.Size = UDim2.new(0, 820, 0, 100)
+TextBox1.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextBox1.Visible = true
+TextBox1.ZIndex = 1
+TextBox1.Archivable = true
+TextBox1.ClipsDescendants = false
+TextBox1.AutoLocalize = true
+TextBox1.Font = Enum.Font.SourceSans
+TextBox1.LineHeight = 1
+TextBox1.PlaceholderText = ""
+TextBox1.Text = "PFFRRRPPFRPRRRR noob"
+TextBox1.TextColor3 = Color3.new(0, 0, 0)
+TextBox1.TextScaled = true
+TextBox1.TextSize = 14
+TextBox1.TextStrokeTransparency = 1
+TextBox1.TextTransparency = 0
+TextBox1.TextTruncate = Enum.TextTruncate.None
+TextBox1.TextWrapped = true
+TextBox1.TextXAlignment = Enum.TextXAlignment.Center
+TextBox1.TextYAlignment = Enum.TextYAlignment.Center
+
+delay(5, function()
+    ScreenGui1:Destroy()
+end)
 shared.Disabled = false
 shared.Disabled2 = false
 game:GetService("UserInputService").InputBegan:Connect(function(input)
-	if input.KeyCode == Enum.KeyCode.RightControl then
-		shared.Disabled = not shared.Disabled
-	end
-	if input.KeyCode == Enum.KeyCode.LeftControl then
-		shared.Disabled2 = not shared.Disabled2
-	end
+    if input.KeyCode == Enum.KeyCode.RightControl then
+        shared.Disabled = not shared.Disabled
+    end
+    if input.KeyCode == Enum.KeyCode.LeftControl then
+        shared.Disabled2 = not shared.Disabled2
+    end
 end)
 
 
